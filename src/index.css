@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/* Horizontal scroll track - hide scrollbar visually but keep functionality */
+.scroll-track {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge */
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-track::-webkit-scrollbar {
+  display: none;                  /* Chrome/Safari */
+}
